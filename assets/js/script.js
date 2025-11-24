@@ -49,3 +49,75 @@ function initNavbarScripts() {
 
 loadNavbar();
 // Navbar End
+
+// Footer Start
+async function loadFooter() {
+    try {
+        const response = await fetch('components/footer.html');
+
+        if (!response.ok) {
+            throw new Error('Could not load footer. Make sure you are running Live Server.');
+        }
+
+        const html = await response.text();
+        document.getElementById('footer-container').innerHTML = html;
+
+    } catch (error) {
+        console.error("Error:", error);
+        document.getElementById('footer-container').innerHTML =
+            "<p class='text-red-500 text-center'>Error loading footer. Please open via Live Server.</p>";
+    }
+}
+
+loadFooter();
+// Footer End
+
+// Hero Swiper Start
+var swiper = new Swiper(".heroSwiper", {
+    effect: "fade",
+    loop: true,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+// Hero Swiper End
+
+// Counter Animation Function
+function startCounter(counter) {
+    const target = +counter.getAttribute('data-target');
+    const speed = 80;
+    let count = 0;
+
+    const updateCount = () => {
+        count += Math.ceil(target / 50);
+        if (count < target) {
+            counter.innerText = count;
+            requestAnimationFrame(updateCount);
+        } else {
+            counter.innerText = target;
+        }
+    };
+    updateCount();
+}
+
+// Trigger animation on scroll using IntersectionObserver
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            document.querySelectorAll(".counter").forEach(counter => startCounter(counter));
+            observer.disconnect();
+        }
+    });
+}, { threshold: 0.5 });
+
+observer.observe(document.querySelector("#counter-section"));
+// Counter Animation End

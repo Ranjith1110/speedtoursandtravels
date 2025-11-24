@@ -13,3 +13,26 @@
     --secondary-color: #e69138;
     --background-color: #F3F4F6;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 30px !important;
+    height: 30px !important;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border-radius: 50%;
+    color: var(--primary-color);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 16px !important;
+}
+
+.swiper-button-next {
+    padding-left: 2px;
+}
+
+.swiper-button-prev {
+    padding-right: 2px;
+}

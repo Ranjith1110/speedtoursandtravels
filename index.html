@@ -5,12 +5,522 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krithi Travels</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body class="bg-[var(--background-color)]">
+
+    <!-- Navbar will be loaded here -->
     <div id="navbar-container"></div>
 
+    <!-- Main content will be loaded here -->
 
+    <!-- Hero Section -->
+    <section class="relative w-full h-[80vh] md:h-screen overflow-hidden">
+
+        <div class="swiper heroSwiper h-full">
+
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide relative">
+                    <img src="assets/images/destination/destination1.jpg" class="w-full h-full object-cover" />
+
+                    <div
+                        class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center px-6">
+                        <h1 class="text-3xl md:text-6xl font-extrabold text-white mb-4">
+                            Welcome to Krithi Travels
+                        </h1>
+                        <p class="text-lg md:text-2xl text-gray-200 font-medium max-w-2xl">
+                            Best Taxi Services with 24/7 Support
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide relative">
+                    <img src="assets/images/destination/destination2.jpg" class="w-full h-full object-cover" />
+
+                    <div
+                        class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center px-6">
+                        <h1 class="text-3xl md:text-6xl font-extrabold text-white mb-4">
+                            Rameswaram Tour Packages
+                        </h1>
+                        <p class="text-lg md:text-2xl text-gray-200 font-medium max-w-2xl">
+                            Explore Famous Tourist Spots with Comfort & Safety
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide relative">
+                    <img src="assets/images/destination/destination3.jpg" class="w-full h-full object-cover" />
+
+                    <div
+                        class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center px-6">
+                        <h1 class="text-3xl md:text-6xl font-extrabold text-white mb-4">
+                            Family & Group Tempo Traveller
+                        </h1>
+                        <p class="text-lg md:text-2xl text-gray-200 font-medium max-w-2xl">
+                            Comfortable 12, 17 & 20 Seater Vehicles Available
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide relative">
+                    <img src="assets/images/destination/destination4.jpg" class="w-full h-full object-cover" />
+
+                    <div
+                        class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center px-6">
+                        <h1 class="text-3xl md:text-6xl font-extrabold text-white mb-4">
+                            Call & Book Anytime
+                        </h1>
+                        <p class="text-lg md:text-2xl text-gray-200 font-medium max-w-2xl">
+                            +91 8807 729 297 | Fast & Reliable Service
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+    </section>
+    
+
+    <!-- ABOUT US SECTION -->
+    <section class="w-full py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+            <!-- Left Image Stack -->
+            <div class="relative flex justify-center items-center">
+                <!-- Main Large Image -->
+                <div class="w-full max-w-[560px]">
+                    <img src="assets/images/destination/destination1.jpg"
+                        class="rounded-xl shadow-2xl w-full h-[380px] md:h-[550px] object-cover"
+                        alt="Main Travel Image">
+                </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="space-y-6">
+                <p class="text-[var(--secondary-color)] font-bold uppercase tracking-wider">
+                    About Us
+                </p>
+
+                <h2 class="text-3xl md:text-5xl font-extrabold text-[var(--primary-color)] leading-tight">
+                    Welcome to Madurai <br> Karthik Travels
+                </h2>
+
+                <p class="text-gray-700 leading-relaxed">
+                    Madurai Karthik Provide the Best Service Around Madurai and Respective Areas.
+                    We Have Wonderful Package For Tamilnadu and Kerala Tour Packages. Our Drivers
+                    Keep The Friendly and Best Services of All Time.
+                </p>
+
+                <p class="text-gray-700">
+                    Contact Us If you need vehicles for rent or travels in the Best Way.
+                </p>
+
+                <!-- Call Info -->
+                <div class="flex items-center gap-4">
+                    <div
+                        class="w-16 h-16 bg-[var(--primary-color)] hover:bg-[var(--secondary-color)] rounded-full flex items-center justify-center text-white text-2xl shadow-lg">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <p class="text-gray-700 text-sm">Call Us 24/7 Anytime:</p>
+                        <p class="text-2xl font-extrabold text-[var(--primary-color)]">+91 79048 01429</p>
+                    </div>
+                </div>
+
+                <hr class="border-gray-300">
+
+                <button
+                    class="bg-[var(--primary-color)] hover:bg-[var(--secondary-color)] transition text-white font-bold px-10 py-3 rounded-lg shadow-md">
+                    READ MORE
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- TARIFF DETAILS SECTION -->
+    <section class="w-full py-12">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 text-center mb-10">
+            <p class="text-[var(--secondary-color)] font-bold uppercase tracking-wider">
+                Tariff Details
+            </p>
+
+            <h2 class="text-3xl md:text-5xl font-extrabold text-[var(--primary-color)] leading-tight">
+                Our Service Taxi
+            </h2>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <div
+                class="bg-white rounded-lg shadow-xl border-t-4 border-deep-orange hover:shadow-2xl transition-all duration-300">
+
+                <div class="p-4 bg-gray-50 border-b">
+                    <h3 class="text-xl font-extrabold text-center text-dark-gray">
+                        <i class="fa-solid fa-car-side mr-2 text-deep-orange"></i> Sedan
+                    </h3>
+                </div>
+
+                <div class="flex justify-center p-3">
+                    <img src="assets/images/destination/destination1.jpg" alt="Sedan Car"
+                        class="w-full max-w-[340px] h-[160px] object-cover">
+                </div>
+
+                <div class="p-4 pt-0">
+
+                    <div class="mb-4 p-3 border border-gray-200 rounded-md bg-white shadow-sm">
+                        <p class="text-xs font-bold text-dark-gray uppercase tracking-wider text-center mb-2">
+                            <i class="fa-solid fa-road mr-1 text-deep-orange"></i> Above 250 Km / Day (Long Haul)
+                        </p>
+                        <div class="space-y-1 text-sm text-gray-700">
+                            <div class="flex justify-between border-b border-dashed pb-1">
+                                <span class="font-medium">Per KM Cost:</span>
+                                <span class="font-bold text-dark-gray">₹13</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="font-medium">Driver Betta:</span>
+                                <span class="font-bold text-dark-gray">₹300</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-3 border border-gray-200 rounded-md bg-white shadow-sm">
+                        <p class="text-xs font-bold text-dark-gray uppercase tracking-wider text-center mb-2">
+                            <i class="fa-solid fa-calendar-day mr-1 text-dark-gray"></i> Below 250 Km / Day (Local)
+                        </p>
+                        <div class="space-y-1 text-sm text-gray-700">
+                            <div class="flex justify-between border-b border-dashed pb-1">
+                                <span class="font-medium">Rent Per Day:</span>
+                                <span class="font-bold text-dark-gray">₹1700</span>
+                            </div>
+                            <div class="flex justify-between border-b border-dashed pb-1">
+                                <span class="font-medium">Fuel Cost Per KM:</span>
+                                <span class="font-bold text-dark-gray">₹10</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="font-medium">Driver Betta:</span>
+                                <span class="font-bold text-red-600">No</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-[10px] text-center text-gray-500 mt-3 italic leading-tight">
+                        * Toll, parking, and Hill station charges are extra.
+                    </p>
+
+                    <button
+                        class="mt-4 w-full py-2 bg-dark-gray rounded-md font-semibold text-white text-sm hover:bg-dark-gray/90 transition-all duration-300">
+                        BOOK NOW
+                    </button>
+                </div>
+            </div>
+
+            <div
+                class="bg-white rounded-lg shadow-xl border-t-4 border-deep-orange hover:shadow-2xl transition-all duration-300">
+
+                <div class="p-4 bg-gray-50 border-b">
+                    <h3 class="text-xl font-extrabold text-center text-dark-gray">
+                        <i class="fa-solid fa-car-side mr-2 text-deep-orange"></i> SUV / Innova
+                    </h3>
+                </div>
+
+                <div class="flex justify-center p-3">
+                    <img src="assets/images/destination/destination1.jpg" alt="SUV/Innova Car"
+                        class="w-full max-w-[340px] h-[160px] object-cover">
+                </div>
+
+                <div class="p-4 pt-0">
+
+                    <div class="mb-4 p-3 border border-gray-200 rounded-md bg-white shadow-sm">
+                        <p class="text-xs font-bold text-dark-gray uppercase tracking-wider text-center mb-2">
+                            <i class="fa-solid fa-road mr-1 text-deep-orange"></i> Above 250 Km / Day (Long Haul)
+                        </p>
+                        <div class="space-y-1 text-sm text-gray-700">
+                            <div class="flex justify-between border-b border-dashed pb-1">
+                                <span class="font-medium">Per KM Cost:</span>
+                                <span class="font-bold text-dark-gray">₹15</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="font-medium">Driver Betta:</span>
+                                <span class="font-bold text-dark-gray">₹400</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-3 border border-gray-200 rounded-md bg-white shadow-sm">
+                        <p class="text-xs font-bold text-dark-gray uppercase tracking-wider text-center mb-2">
+                            <i class="fa-solid fa-calendar-day mr-1 text-dark-gray"></i> Below 250 Km / Day (Local)
+                        </p>
+                        <div class="space-y-1 text-sm text-gray-700">
+                            <div class="flex justify-between border-b border-dashed pb-1">
+                                <span class="font-medium">Rent Per Day:</span>
+                                <span class="font-bold text-dark-gray">₹2200</span>
+                            </div>
+                            <div class="flex justify-between border-b border-dashed pb-1">
+                                <span class="font-medium">Fuel Cost Per KM:</span>
+                                <span class="font-bold text-dark-gray">₹12</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="font-medium">Driver Betta:</span>
+                                <span class="font-bold text-red-600">No</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-[10px] text-center text-gray-500 mt-3 italic leading-tight">
+                        * Toll, parking, and Hill station charges are extra.
+                    </p>
+
+                    <button
+                        class="mt-4 w-full py-2 bg-dark-gray rounded-md font-semibold text-white text-sm hover:bg-dark-gray/90 transition-all duration-300">
+                        BOOK NOW
+                    </button>
+                </div>
+            </div>
+
+            <div
+                class="bg-white rounded-lg shadow-xl border-t-4 border-deep-orange hover:shadow-2xl transition-all duration-300">
+
+                <div class="p-4 bg-gray-50 border-b">
+                    <h3 class="text-xl font-extrabold text-center text-dark-gray">
+                        <i class="fa-solid fa-car-side mr-2 text-deep-orange"></i> Sedan
+                    </h3>
+                </div>
+
+                <div class="flex justify-center p-3">
+                    <img src="assets/images/destination/destination1.jpg" alt="Sedan Car"
+                        class="w-full max-w-[340px] h-[160px] object-cover">
+                </div>
+
+                <div class="p-4 pt-0">
+
+                    <div class="mb-4 p-3 border border-gray-200 rounded-md bg-white shadow-sm">
+                        <p class="text-xs font-bold text-dark-gray uppercase tracking-wider text-center mb-2">
+                            <i class="fa-solid fa-road mr-1 text-deep-orange"></i> Above 250 Km / Day (Long Haul)
+                        </p>
+                        <div class="space-y-1 text-sm text-gray-700">
+                            <div class="flex justify-between border-b border-dashed pb-1">
+                                <span class="font-medium">Per KM Cost:</span>
+                                <span class="font-bold text-dark-gray">₹13</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="font-medium">Driver Betta:</span>
+                                <span class="font-bold text-dark-gray">₹300</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-3 border border-gray-200 rounded-md bg-white shadow-sm">
+                        <p class="text-xs font-bold text-dark-gray uppercase tracking-wider text-center mb-2">
+                            <i class="fa-solid fa-calendar-day mr-1 text-dark-gray"></i> Below 250 Km / Day (Local)
+                        </p>
+                        <div class="space-y-1 text-sm text-gray-700">
+                            <div class="flex justify-between border-b border-dashed pb-1">
+                                <span class="font-medium">Rent Per Day:</span>
+                                <span class="font-bold text-dark-gray">₹1700</span>
+                            </div>
+                            <div class="flex justify-between border-b border-dashed pb-1">
+                                <span class="font-medium">Fuel Cost Per KM:</span>
+                                <span class="font-bold text-dark-gray">₹10</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="font-medium">Driver Betta:</span>
+                                <span class="font-bold text-red-600">No</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-[10px] text-center text-gray-500 mt-3 italic leading-tight">
+                        * Toll, parking, and Hill station charges are extra.
+                    </p>
+
+                    <button
+                        class="mt-4 w-full py-2 bg-dark-gray rounded-md font-semibold text-white text-sm hover:bg-dark-gray/90 transition-all duration-300">
+                        BOOK NOW
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- OUR SERVICES SECTION -->
+    <section class="w-full py-20 bg-service-light">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 text-center mb-16">
+            <p class="text-[var(--secondary-color)] font-bold uppercase tracking-wider">
+                Our Services
+            </p>
+
+            <h2 class="text-3xl md:text-5xl font-extrabold text-[var(--primary-color)] leading-tight">
+                We provide the best service in Travels, Hotel Booking and Ticket Booking with reasonable rates.
+            </h2>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            <div
+                class="group bg-white rounded-xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1 overflow-hidden">
+
+                <div class="relative h-64 overflow-hidden">
+                    <img src="assets/images/destination/destination3.jpg" alt="Car Hire / Rental"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-10 flex items-end p-4">
+                        <a href="#"
+                            class="px-5 py-2 bg-service-accent text-white font-bold rounded-md hover:bg-service-primary transition-colors text-sm">
+                            BOOK NOW
+                        </a>
+                    </div>
+                </div>
+
+                <div class="p-6 text-center">
+                    <h3 class="text-2xl font-extrabold text-black mt-2 mb-3">Car Hire / Rental</h3>
+
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4 h-24 overflow-hidden">
+                        Our prime focus is on delivering a high quality customer satisfaction and providing very modest
+                        rates on latest model vehicles. We have all type of vechiles and arranged the tours in South
+                        India...
+                    </p>
+
+                    <a href="#"
+                        class="text-black font-semibold text-sm hover:underline hover:text-[var(--secondary-color)] transition-colors">
+                        <i class="fa-solid fa-angle-right mr-1"></i> Learn More
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="group bg-white rounded-xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1 overflow-hidden">
+
+                <div class="relative h-64 overflow-hidden">
+                    <img src="assets/images/destination/destination3.jpg" alt="Tour Packages"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-10 flex items-end p-4">
+                        <a href="#"
+                            class="px-5 py-2 bg-service-accent text-white font-bold rounded-md hover:bg-service-primary transition-colors text-sm">
+                            BOOK NOW
+                        </a>
+                    </div>
+                </div>
+
+                <div class="p-6 text-center">
+                    <h3 class="text-2xl font-extrabold text-black mt-2 mb-3">Tour Packages</h3>
+
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4 h-24 overflow-hidden">
+                        We arranged in all type of tour packages around Domestic & International with your budget.
+                        including pilgrim tour packages, Waterfalls Tour Packages, Honey Moon Packages and more...
+                    </p>
+
+                    <a href="#"
+                        class="text-black font-semibold text-sm hover:underline hover:text-[var(--secondary-color)] transition-colors">
+                        <i class="fa-solid fa-angle-right mr-1"></i> Learn More
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="group bg-white rounded-xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1 overflow-hidden">
+
+                <div class="relative h-64 overflow-hidden">
+                    <img src="assets/images/destination/destination3.jpg" alt="Hotel Booking"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-10 flex items-end p-4">
+                        <a href="#"
+                            class="px-5 py-2 bg-service-accent text-white font-bold rounded-md hover:bg-service-primary transition-colors text-sm">
+                            BOOK NOW
+                        </a>
+                    </div>
+                </div>
+
+                <div class="p-6 text-center">
+                    <h3 class="text-2xl font-extrabold text-black mt-2 mb-3">Hotel Booking</h3>
+
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4 h-24 overflow-hidden">
+                        Great savings on hotels in South India with us, Good availability and great rates. Read hotel
+                        reviews and choose the best hotel deal for your stay. 100% Customer satisfaction with your trip.
+                    </p>
+
+                    <a href="#"
+                        class="text-black font-semibold text-sm hover:underline hover:text-[var(--secondary-color)] transition-colors">
+                        <i class="fa-solid fa-angle-right mr-1"></i> Learn More
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- COUNTER & PARALLAX SECTION -->
+    <section id="counter-section" class="relative w-full bg-fixed bg-center bg-cover"
+        style="background-image: url('assets/images/destination.jpg');">
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/70"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6 md:px-12 text-center py-20">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-4">
+                Helping you make the most of every trip.
+            </h2>
+            <p class="text-gray-200 max-w-3xl mx-auto">
+                We can help you make the right choice when you find for travels, hotels and attractions.
+            </p>
+
+            <!-- Counters -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 mt-14 text-white ">
+
+                <!-- Counter Box -->
+                <div>
+                    <h3 class="text-5xl md:text-6xl font-extrabold text-[var(--secondary-color)] counter"
+                        data-target="200">0</h3>
+                    <p class="mt-2 text-lg">Rated Hotels</p>
+                </div>
+
+                <div>
+                    <h3 class="text-5xl md:text-6xl font-extrabold text-[var(--secondary-color)] counter"
+                        data-target="350">0</h3>
+                    <p class="mt-2 text-lg">Tourist Places</p>
+                </div>
+
+                <div>
+                    <h3 class="text-5xl md:text-6xl font-extrabold text-[var(--secondary-color)] counter"
+                        data-target="800">0</h3>
+                    <p class="mt-2 text-lg">Hire Cabs</p>
+                </div>
+
+                <div>
+                    <h3 class="text-5xl md:text-6xl font-extrabold text-[var(--secondary-color)] counter"
+                        data-target="10014">0</h3>
+                    <p class="mt-2 text-lg">Happy Customers</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer will be loaded here -->
+    <div id="footer-container"></div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/assets/js/tailwind.js"></script>
     <script src="/assets/js/script.js"></script>
 </body>
