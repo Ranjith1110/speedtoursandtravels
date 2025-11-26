@@ -121,3 +121,35 @@ const observer = new IntersectionObserver((entries) => {
 
 observer.observe(document.querySelector("#counter-section"));
 // Counter Animation End
+
+// Load More / Load Less Functionality
+document.addEventListener('DOMContentLoaded', function () {
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    const loadLessBtn = document.getElementById('load-less-btn');
+    const cards = document.querySelectorAll('.package-card');
+    const itemsToShow = 8;
+
+    loadMoreBtn.addEventListener('click', function () {
+        const hiddenCards = document.querySelectorAll('.package-card.hidden');
+        hiddenCards.forEach(card => {
+            card.classList.remove('hidden');
+        });
+
+        loadMoreBtn.classList.add('hidden');
+        loadLessBtn.classList.remove('hidden');
+    });
+
+    loadLessBtn.addEventListener('click', function () {
+        cards.forEach((card, index) => {
+            if (index >= itemsToShow) {
+                card.classList.add('hidden');
+            }
+        });
+
+        loadLessBtn.classList.add('hidden');
+        loadMoreBtn.classList.remove('hidden');
+
+        document.getElementById('packages-grid').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+});
+// Load More / Load Less Functionality End
