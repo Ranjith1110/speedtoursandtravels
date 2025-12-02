@@ -17,83 +17,71 @@
 
     <!-- Main content will be loaded here -->
 
-    <!-- Hero Section -->
-    <section class="relative w-full h-[80vh] md:h-screen overflow-hidden">
+    <!-- HERO SECTION -->
+    <section id="heroSection"
+        class="relative w-full h-[80vh] md:h-screen bg-cover bg-center transition-all duration-700"
+        style="background-image: url('assets/images/destination/destination1.jpg');">
 
-        <div class="swiper heroSwiper h-full">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/50"></div>
 
-            <div class="swiper-wrapper">
+        <!-- TEXT CONTENT -->
+        <div id="heroContent"
+            class="max-w-7xl mx-auto absolute bottom-10 inset-0 flex flex-col justify-end items-start px-6 md:px-20 pb-28 md:pb-52 text-white z-10">
+            <h1 id="heroTitle" class="text-3xl md:text-6xl font-extrabold md:mb-2">
+                Hire Cabs in Rameswaram
+            </h1>
+            <p id="heroSubtitle" class="text-lg md:text-2xl max-w-2xl">
+                Best Taxi Services with 24/7 Support Best Taxi Services with 24/7 Support 
+            </p>
 
-                <!-- Slide 1 -->
-                <div class="swiper-slide relative">
-                    <img src="assets/images/destination/destination1.jpg" class="w-full h-full object-cover" />
+            <button
+                class="mt-4 bg-[var(--primary-color)] text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-[var(--secondary-color)] transition">
+                Read More
+            </button>
+        </div>
 
-                    <div
-                        class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center px-6">
-                        <h1 class="text-3xl md:text-6xl font-extrabold text-white mb-4">
-                            Welcome to Krithi Travels
-                        </h1>
-                        <p class="text-lg md:text-2xl text-gray-200 font-medium max-w-2xl">
-                            Best Taxi Services with 24/7 Support
-                        </p>
-                    </div>
+        <!-- SERVICE CARDS -->
+        <div class="absolute bottom-0 w-full flex justify-center z-20">
+
+            <div class="grid grid-cols-4 w-full max-w-6xl gap-0">
+
+                <!-- CARD 1 -->
+                <div id="card1" onclick="manualChange(1)"
+                    class="cardBox py-4 px-2 flex flex-col justify-center items-center text-center">
+                    <div class="cardNumber">1</div>
+                    <h3>Hire Cabs</h3>
+                    <p>Find the best Travels</p>
                 </div>
 
-                <!-- Slide 2 -->
-                <div class="swiper-slide relative">
-                    <img src="assets/images/destination/destination2.jpg" class="w-full h-full object-cover" />
-
-                    <div
-                        class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center px-6">
-                        <h1 class="text-3xl md:text-6xl font-extrabold text-white mb-4">
-                            Rameswaram Tour Packages
-                        </h1>
-                        <p class="text-lg md:text-2xl text-gray-200 font-medium max-w-2xl">
-                            Explore Famous Tourist Spots with Comfort & Safety
-                        </p>
-                    </div>
+                <!-- CARD 2 -->
+                <div id="card2" onclick="manualChange(2)"
+                    class="cardBox py-4 px-2 flex flex-col justify-center items-center text-center">
+                    <div class="cardNumber">2</div>
+                    <h3>Tour Packages</h3>
+                    <p>Expert Financial Advice</p>
                 </div>
 
-                <!-- Slide 3 -->
-                <div class="swiper-slide relative">
-                    <img src="assets/images/destination/destination3.jpg" class="w-full h-full object-cover" />
-
-                    <div
-                        class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center px-6">
-                        <h1 class="text-3xl md:text-6xl font-extrabold text-white mb-4">
-                            Family & Group Tempo Traveller
-                        </h1>
-                        <p class="text-lg md:text-2xl text-gray-200 font-medium max-w-2xl">
-                            Comfortable 12, 17 & 20 Seater Vehicles Available
-                        </p>
-                    </div>
+                <!-- CARD 3 -->
+                <div id="card3" onclick="manualChange(3)"
+                    class="cardBox py-4 px-2 flex flex-col justify-center items-center text-center">
+                    <div class="cardNumber">3</div>
+                    <h3>Attractions</h3>
+                    <p>Local Sightseeing</p>
                 </div>
 
-                <!-- Slide 4 -->
-                <div class="swiper-slide relative">
-                    <img src="assets/images/destination/destination4.jpg" class="w-full h-full object-cover" />
-
-                    <div
-                        class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center px-6">
-                        <h1 class="text-3xl md:text-6xl font-extrabold text-white mb-4">
-                            Call & Book Anytime
-                        </h1>
-                        <p class="text-lg md:text-2xl text-gray-200 font-medium max-w-2xl">
-                            +91 8807 729 297 | Fast & Reliable Service
-                        </p>
-                    </div>
+                <!-- CARD 4 -->
+                <div id="card4" onclick="manualChange(4)"
+                    class="cardBox py-4 px-2 flex flex-col justify-center items-center text-center">
+                    <div class="cardNumber">4</div>
+                    <h3>Hotels</h3>
+                    <p>The best rated Hotels</p>
                 </div>
 
             </div>
 
-            <!-- Pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- Navigation Buttons -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-
         </div>
+
     </section>
 
 

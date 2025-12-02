@@ -73,22 +73,61 @@ loadFooter();
 // Footer End
 
 // Hero Swiper Start
-var swiper = new Swiper(".heroSwiper", {
-    effect: "fade",
-    loop: true,
-    autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
+const hero = document.getElementById("heroSection");
+const title = document.getElementById("heroTitle");
+const subtitle = document.getElementById("heroSubtitle");
+
+const cards = {
+    1: document.getElementById("card1"),
+    2: document.getElementById("card2"),
+    3: document.getElementById("card3"),
+    4: document.getElementById("card4"),
+};
+
+const slides = {
+    1: { img: "assets/images/destination/destination1.jpg", title: "Hire Cabs in Rameswaram", subtitle: "Best Taxi Services with 24/7 Support" },
+    2: { img: "assets/images/destination/destination2.jpg", title: "Rameswaram Tour Packages", subtitle: "Explore all tourist places comfortably, Explore all tourist places comfortably" },
+    3: { img: "assets/images/destination/destination3.jpg", title: "Top Attractions in Rameswaram", subtitle: "Visit all the famous sightseeing spots, Explore all tourist places comfortably" },
+    4: { img: "assets/images/destination/destination4.jpg", title: "Hotels & Resorts", subtitle: "Find the best rated hotels for your stay, Explore all tourist places comfortably" }
+};
+
+let current = 1;
+let autoSlide;
+
+function setActive(index) {
+    Object.values(cards).forEach(c => c.classList.remove("active"));
+    cards[index].classList.add("active");
+}
+
+function changeHero(index) {
+    hero.style.opacity = 0;
+
+    setTimeout(() => {
+        hero.style.backgroundImage = `url('${slides[index].img}')`;
+        title.innerText = slides[index].title;
+        subtitle.innerText = slides[index].subtitle;
+        hero.style.opacity = 1;
+    }, 300);
+
+    setActive(index);
+}
+
+function autoSlideStart() {
+    autoSlide = setInterval(() => {
+        current = current === 4 ? 1 : current + 1;
+        changeHero(current);
+    }, 6000);
+}
+
+function manualChange(index) {
+    clearInterval(autoSlide);
+    current = index;
+    changeHero(index);
+    autoSlideStart();
+}
+
+setActive(1);
+autoSlideStart();
 // Hero Swiper End
 
 // Counter Animation Function

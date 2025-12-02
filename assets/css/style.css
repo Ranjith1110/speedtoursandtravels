@@ -36,3 +36,84 @@
 .swiper-button-prev {
     padding-right: 2px;
 }
+
+
+.cardBox {
+    background: white;
+    transition: 0.3s;
+}
+
+.cardBox .cardNumber {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 999px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.cardBox h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    transition: 0.3s;
+}
+
+.cardBox p {
+    font-size: 13px;
+    color: #444;
+    transition: 0.3s;
+}
+
+/* ACTIVE CARD STYLE */
+.cardBox.active {
+    background: var(--primary-color) !important;
+    color: white !important;
+}
+
+.cardBox.active h3,
+.cardBox.active p {
+    color: white !important;
+}
+
+.cardBox.active .cardNumber {
+    background: white !important;
+    color: var(--primary-color) !important;
+    font-weight: bold;
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 640px) {
+    #heroSection {
+        height: 65vh;
+    }
+
+    #heroTitle {
+        font-size: 24px;
+    }
+
+    #heroSubtitle {
+        font-size: 14px;
+    }
+
+    .cardBox {
+        padding: 10px 4px;
+    }
+
+    .cardNumber {
+        display: none !important;
+    }
+
+    .cardBox h3 {
+        font-size: 12px;
+    }
+
+    .cardBox p {
+        font-size: 10px;
+    }
+}
