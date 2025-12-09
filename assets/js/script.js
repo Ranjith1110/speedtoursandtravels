@@ -192,3 +192,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 // Load More / Load Less Functionality End
+
+// Testimonial Swiper Start
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    effect: "fade", // Optional: Fade effect looks classy for testimonials
+    fadeEffect: { crossFade: true },
+    navigation: {
+        nextEl: ".custom-next", 
+        prevEl: ".custom-prev",
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+});
+// Testimonial Swiper End
